@@ -12,6 +12,7 @@ interface ProductCardProps {
   category: string;
   isNew?: boolean;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -22,6 +23,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   category,
   isNew = false,
   className,
+  style,
 }) => {
   return (
     <div 
@@ -29,6 +31,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         "product-card group animate-fade-in", 
         className
       )}
+      style={style}
     >
       <div className="relative overflow-hidden rounded-xl">
         <Link to={`/product/${id}`}>
