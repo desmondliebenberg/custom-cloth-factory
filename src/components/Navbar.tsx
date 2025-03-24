@@ -28,58 +28,58 @@ const Navbar: React.FC = () => {
         }
       )}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <Link 
             to="/" 
-            className="text-2xl font-bold tracking-tight text-primary transition-opacity hover:opacity-80"
+            className="text-3xl font-bold tracking-tight text-primary transition-opacity hover:opacity-80"
           >
             ATELIER
           </Link>
 
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-10">
             <Link 
               to="/" 
-              className="text-sm font-medium text-primary/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+              className="text-base font-medium text-primary/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
             >
               Home
             </Link>
             <Link 
               to="/shop" 
-              className="text-sm font-medium text-primary/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+              className="text-base font-medium text-primary/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
             >
               Shop
             </Link>
             <Link 
               to="/customize" 
-              className="text-sm font-medium text-primary/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+              className="text-base font-medium text-primary/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
             >
               Customize
             </Link>
             <Link 
               to="/about" 
-              className="text-sm font-medium text-primary/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+              className="text-base font-medium text-primary/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
             >
               About
             </Link>
           </nav>
 
-          <div className="flex items-center space-x-5">
+          <div className="flex items-center space-x-6">
             <button className="text-primary/80 hover:text-primary transition-colors">
-              <Search size={20} />
+              <Search size={22} />
             </button>
             <Link to="/favorites" className="text-primary/80 hover:text-primary transition-colors">
-              <Heart size={20} />
+              <Heart size={22} />
             </Link>
             <Link to="/account" className="text-primary/80 hover:text-primary transition-colors">
-              <User size={20} />
+              <User size={22} />
             </Link>
             <Link 
               to="/cart" 
               className="text-primary/80 hover:text-primary transition-colors relative"
             >
-              <ShoppingCart size={20} />
-              <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white">
+              <ShoppingCart size={22} />
+              <span className="absolute -top-2 -right-2 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-white">
                 0
               </span>
             </Link>
@@ -101,34 +101,34 @@ const Navbar: React.FC = () => {
         <div 
           className={cn(
             "md:hidden overflow-hidden transition-all duration-300 ease-custom-ease",
-            isMobileMenuOpen ? "max-h-60 opacity-100 mt-4" : "max-h-0 opacity-0"
+            isMobileMenuOpen ? "max-h-72 opacity-100 mt-6" : "max-h-0 opacity-0"
           )}
         >
-          <div className="flex flex-col space-y-4 py-4">
+          <div className="flex flex-col space-y-5 py-4">
             <Link 
               to="/" 
-              className="text-primary/80 hover:text-primary transition-colors"
+              className="text-lg text-primary/80 hover:text-primary transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link 
               to="/shop" 
-              className="text-primary/80 hover:text-primary transition-colors"
+              className="text-lg text-primary/80 hover:text-primary transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Shop
             </Link>
             <Link 
               to="/customize" 
-              className="text-primary/80 hover:text-primary transition-colors"
+              className="text-lg text-primary/80 hover:text-primary transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Customize
             </Link>
             <Link 
               to="/about" 
-              className="text-primary/80 hover:text-primary transition-colors"
+              className="text-lg text-primary/80 hover:text-primary transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
