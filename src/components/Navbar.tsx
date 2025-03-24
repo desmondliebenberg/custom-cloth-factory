@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
                 "text-white/80 hover:text-white": isDarkPage
               }
             )}>
-              <Search size={22} />
+              <Search size={26} />
             </button>
             <Link to="/favorites" className={cn(
               "transition-colors",
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
                 "text-white/80 hover:text-white": isDarkPage
               }
             )}>
-              <Heart size={22} />
+              <Heart size={26} />
             </Link>
             <Link to="/account" className={cn(
               "transition-colors",
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
                 "text-white/80 hover:text-white": isDarkPage
               }
             )}>
-              <User size={22} />
+              <User size={26} />
             </Link>
             <Link 
               to="/cart" 
@@ -138,7 +138,7 @@ const Navbar: React.FC = () => {
                 }
               )}
             >
-              <ShoppingCart size={22} />
+              <ShoppingCart size={26} />
               <span className="absolute -top-2 -right-2 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-white">
                 0
               </span>
